@@ -1,0 +1,25 @@
+{
+    "name": "dmis-lang",
+    "displayName": "DMIS Lang",
+    "description": "DMIS 5.2 Syntax Highlighting",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.48.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "dmis",
+            "aliases": ["DMIS", "dmis"],
+            "extensions": [".dmi"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "dmis",
+            "scopeName": "source.dmis",
+            "path": "./syntaxes/dmis.tmLanguage.json"
+        }]
+    }
+}
